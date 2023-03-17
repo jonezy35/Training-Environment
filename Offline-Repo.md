@@ -25,6 +25,8 @@ hostnamectl set-hostname repo.dmss.lan
 dnf config-manager --set-enabled crb
 
 dnf install epel-release -y
+
+dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 ```
 <u> Install Needed Dependencies</u>
 ```
@@ -33,6 +35,7 @@ sudo dnf install htop -y
 sudo dnf install git -y
 sudo dnf install vim -y 
 sudo dnf install wget -y
+dnf install docker-ce docker-ce-cli containerd.io
 ```
 
 <u>Create Local Repository</u>
@@ -41,7 +44,7 @@ dnf install yum-utils -y
 
 mkdir /usr/share/nginx/html/repos
 
-mkdir -p /usr/share/nginx/html/repos/{baseos,appstream,crb,epel,elastic,extras,zeek,suricata}
+mkdir -p /usr/share/nginx/html/repos/{baseos,appstream,crb,epel,elastic,extras,zeek,suricata,docker-ce-stable}
 ```
 
 <u>Verify repositories have been enabled successfully</u>
@@ -51,12 +54,13 @@ mkdir -p /usr/share/nginx/html/repos/{baseos,appstream,crb,epel,elastic,extras,z
 you should see something like this:
 
 ```
-repo id               repo name
-appstream             AlmaLinux 9 - AppStream
-baseos                AlmaLinux 9 - BaseOS
-crb                   AlmaLinux 9 - CRB
-epel                  Extra Packages for Enterprise Linux 9 - x86_64
-extras                AlmaLinux 9 - Extras
+repo id                                                             repo name
+appstream                                                           AlmaLinux 9 - AppStream
+baseos                                                              AlmaLinux 9 - BaseOS
+crb                                                                 AlmaLinux 9 - CRB
+docker-ce-stable                                                    Docker CE Stable - x86_64
+epel                                                                Extra Packages for Enterprise Linux 9 - x86_64
+extras                                                              AlmaLinux 9 - Extras
 ```
 
 <u>Clone repositories</u>
@@ -246,6 +250,11 @@ server {
 
 <u>Configuring other Linux workstations to access the repository</u>
 
+Sign in and switch to sudo
+```
+sudo su
+```
+
 ```
 mv /etc/yum.repos.d/*.repo /tmp/
 ```
@@ -253,6 +262,8 @@ mv /etc/yum.repos.d/*.repo /tmp/
 ```
 vi /etc/yum.repos.d/localrepo.repo
 ```
+
+Copy and paste the below into your localrepo.repo
 
 ```
 [localrepo-base]
@@ -301,4 +312,20 @@ localrepo-base                                                                  
 localrepo-crb                                                                   AlmaLinux CodeReadBuilder
 localrepo-epel                                                                  AlmaLinux EPEL
 localrepo-extras                                                                AlmaLinux Extras
+```
+
+You can now test your offline repositories by installing a package
+
+```
+dnf install vim -y
+```
+
+You can now install the other basic dependencies needed
+
+```
+sudo dnf install tar -y
+sudo dnf install htop -y
+sudo dnf install git -y
+sudo dnf install vim -y 
+sudo dnf install wget -y
 ```
