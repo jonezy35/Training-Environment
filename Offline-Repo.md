@@ -6,6 +6,8 @@
 
 `sudo su`
 
+`hostnamectl set-hostname repo.dmss.lan`
+
 ```
 hostnamectl set-hostname repo.dmss.lan
 ```
@@ -339,4 +341,6 @@ mkdir /usr/share/nginx/html/repos/windows
 
 ```
 cd /usr/share/nginx/html/repos/windows 
+
+curl -L -O https://download.microsoft.com/download/2/5/8/258D30CF-CA4C-433A-A618-FB7E6BCC4EEE/ExchangeServer2016-x64-cu12.iso
 ```
