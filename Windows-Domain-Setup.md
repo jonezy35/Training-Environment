@@ -54,6 +54,7 @@ Do you want to restart(Y/n): Y  #To restart
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.54.47%20PM.png?raw=true)
 
     9. On the Confirm installation selections page, click Install.
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.55.01%20PM.png?raw=true)
 
     10. On the Results page, verify that the installation succeeded, and click Promote this server to a domain controller to start the Active Directory Domain Services Configuration Wizard.
 
