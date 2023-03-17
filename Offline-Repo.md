@@ -214,7 +214,7 @@ sensor      IN      A       10.10.10.104
 
 The spacing should look like this:
 
-![image](https://github.com/jonezy35/Training-Environment/blob/main/Screenshot%202023-03-17%20at%205.37.07%20AM.png?raw=true)
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.16.41%20PM.png?raw=true)
 
 ```
 chown root:named /etc/named.conf
