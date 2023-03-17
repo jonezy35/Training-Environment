@@ -38,11 +38,12 @@ Do you want to restart(Y/n): Y  #To restart
 
 3. Install Domain Controller and DNS
     1. In Server Manager, click **Manage** and click **Add Roles and Features** to start the Add Roles Wizard.
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.47.57%20PM.png?raw=true)
 
-    2. On the Before you begin page, click Next.
+    2. On the Before you begin page, click **Next**.
 
     3. On the Select installation type page, click **Role-based** and then click **Next**.
-
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.48.06%20PM.png?raw=true)
     4. On the Select destination server page, click Select a server from the server pool, click the name of the server where you want to install AD DS and then click Next.
 
     6. On the Select server roles page, click Active Directory Domain Services, then on the Add Roles and Features Wizard dialog box, click Add Features, and then click Next.
