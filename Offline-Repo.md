@@ -252,7 +252,7 @@ server {
 
 <u>Configuring other Linux workstations to access the repository</u>
 
-Sign in and switch to sudo
+On repo.dmss.lan VM:
 ```
 sudo su
 ```
@@ -315,6 +315,8 @@ localrepo-crb                                                                   
 localrepo-epel                                                                  AlmaLinux EPEL
 localrepo-extras                                                                AlmaLinux Extras
 ```
+
+### ***Add portion on setting up second linux server and copying over the repo information***
 
 You can now test your offline repositories by installing a package
 
