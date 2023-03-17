@@ -287,3 +287,14 @@ dnf clean all
 
 dnf repolist
 ```
+
+You should now see something similar to the below
+
+```
+repo id                                                                         repo name
+localrepo-appstream                                                             AlmaLinux AppStream
+localrepo-base                                                                  AlmaLinux Base
+localrepo-crb                                                                   AlmaLinux CodeReadBuilder
+localrepo-epel                                                                  AlmaLinux EPEL
+localrepo-extras                                                                AlmaLinux Extras
+```
