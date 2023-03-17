@@ -329,3 +329,14 @@ sudo dnf install git -y
 sudo dnf install vim -y 
 sudo dnf install wget -y
 ```
+
+
+## <u>Grab Windows Active Directory Dependencies</u>
+
+```
+mkdir /usr/share/nginx/html/repos/windows
+```
+
+```
+cd /usr/share/nginx/html/repos/windows 
+```
