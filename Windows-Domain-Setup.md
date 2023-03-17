@@ -8,6 +8,9 @@ Open a command prompt as administrator and type the following command to upgrade
 
 ```
 DISM /online /Set-Edition:ServerStandard /ProductKey:77KDY-N2CQ8-JVWH3-8GXTV-462HP /AcceptEula
+
+Do you want to restart(Y/n): Y  #To restart
 ```
 
-<u>Windows server 2016 key:</u> 
+<u>Installing Windows Domain Controller and DNS Server</u>
+
