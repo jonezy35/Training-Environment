@@ -206,6 +206,10 @@ kb          IN      A       192.168.10.103
 sensor      IN      A       192.168.10.104
 ```
 
+The spacing should look like this:
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/Screenshot%202023-03-17%20at%205.37.07%20AM.png?raw=true)
+
 ```
 chown root:named /etc/named.conf
 chown -R named:named /var/named
