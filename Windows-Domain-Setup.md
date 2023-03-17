@@ -23,7 +23,20 @@ Do you want to restart(Y/n): Y  #To restart
     - Restart to apply the changes
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%205.41.34%20PM.png?raw=true)
 
-2. Install Domain Controller and DNS
+2. Set static IP Address
+    - Navigate to adapter options
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.30.25%20PM.png?raw=true)
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.30.31%20PM.png?raw=true)
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.30.38%20PM.png?raw=true)
+
+    - Deselect IPv6. Right click IPv4 and navigate to Properties
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.30.51%20PM.png?raw=true)
+    - Set the IPv4 settings as shown in the picture below:
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.34.49%20PM.png?raw=true)
+
+    - Press OK and Close.
+
+3. Install Domain Controller and DNS
     1. In Server Manager, click **Manage** and click **Add Roles and Features** to start the Add Roles Wizard.
 
     2. On the Before you begin page, click Next.
