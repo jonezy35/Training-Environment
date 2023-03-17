@@ -1,4 +1,4 @@
-# <u> User VLAN Windows Domain Setup</u>
+# <u> User VLAN Windows Domain Controller & DNS Setup</u>
 
 ## ***<b><u>Put ESXI Windows VM setup instructions</u></b>***
 
