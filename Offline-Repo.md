@@ -196,20 +196,20 @@ $ORIGIN dmss.lan.
                                 )
 @           IN      NS      ns.dmss.lan.
 
-ns          IN      A       192.168.10.50
+ns          IN      A       10.10.10.50
 
 ; Internal Boxes
-win1        IN      A       192.168.10.10
-win2        IN      A       192.168.10.11
-alma        IN      A       192.168.10.12
+win1        IN      A       10.10.10.10
+win2        IN      A       10.10.10.11
+alma        IN      A       10.10.10.12
 
 ; Internal Services
 repo        IN      CNAME   ns
-es1         IN      A       192.168.10.100
-es2         IN      A       192.168.10.101
-es3         IN      A       192.168.10.102
-kb          IN      A       192.168.10.103
-sensor      IN      A       192.168.10.104
+es1         IN      A       10.10.10.100
+es2         IN      A       10.10.10.101
+es3         IN      A       10.10.10.102
+kb          IN      A       10.10.10.103
+sensor      IN      A       10.10.10.104
 ```
 
 The spacing should look like this:
