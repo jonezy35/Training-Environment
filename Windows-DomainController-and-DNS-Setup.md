@@ -58,30 +58,30 @@ Do you want to restart(Y/n): Y  #To restart
 
     10. On the Results page, verify that the installation succeeded, and click Promote this server to a domain controller to start the Active Directory Domain Services Configuration Wizard.
 
-    ![image]()
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%208.22.55%20AM.png?raw=true)
 
     11. Select add a new forest and create the root domain name as "avengers.lan". Click **Next**
 
-    ![image]()
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%208.23.38%20AM.png?raw=true)
 
     12. Leav all options as default on the domain contoller options page, input our default password, and select **Next**
 
-    ![image]()
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%208.26.37%20AM.png?raw=true)
 
     13. On the DNS Options page, leave the defaults and click **Next**
 
-    ![image]()
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%208.26.46%20AM.png?raw=true)
     
     14. The wizard should automatically recognize our netbios name. Click **Next**.
 
-    ![image]()
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%208.27.31%20AM.png?raw=true)
 
     15. Leave the default paths and click **Next**
 
-    ![image]()
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%208.27.59%20AM.png?raw=true)
 
     16. Click **Next** on the reviw options page.
 
     17. Click **Install**
 
-    ![image]()
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%208.29.31%20AM.png?raw=true)
