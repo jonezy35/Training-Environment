@@ -356,12 +356,12 @@ curl -L -O https://download.microsoft.com/download/2/5/8/258D30CF-CA4C-433A-A618
 ```
 
 ```
-curl -L -O https://dotnet.microsoft.com/en-us/download/dotnet-framework/thank-you/net471-offline-installer
+curl -L https://go.microsoft.com/fwlink/?LinkID=2099383 --output net-installer.exe
 ```
 ```
 curl -L -O https://download.microsoft.com/download/2/C/4/2C47A5C1-A1F3-4843-B9FE-84C0032C61EC/UcmaRuntimeSetup.exe
 ```
 
 ```
-curl -L -O https://download.microsoft.com/download/1/6/B/16B06F60-3B20-4FF2-B699-5E9B7962F9AE/VSU_4/vcredist_x64.exe
+curl -L -O curl -L -O https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe
 ```

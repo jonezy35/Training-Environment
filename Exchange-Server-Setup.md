@@ -19,3 +19,5 @@ Do You Want To Restart The Computer Now? (Y/N): Y  #To restart
 ***Change Computer Name***
 
 ***Join Domain***
+
+***Grab and install prerequisites (.NET may take awhile to install)***
