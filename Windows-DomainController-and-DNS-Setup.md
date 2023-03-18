@@ -38,7 +38,7 @@ Do you want to restart(Y/n): Y  #To restart
     - Set the IPv4 settings as shown in the picture below:
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.34.49%20PM.png?raw=true)
 
-    - Press OK and Close.
+    - Press **OK** and **Close**.
 
 3. Install Domain Controller and DNS
     1. In Server Manager, click **Manage** and click **Add Roles and Features** to start the Add Roles Wizard.
@@ -51,24 +51,24 @@ Do you want to restart(Y/n): Y  #To restart
     4. On the Select destination server page, click on the DC (the local server we are on) and then click **Next**.
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.54.15%20PM.png?raw=true)
 
-    6. On the Select server roles page, click Active Directory Domain Services and DNS Server, then on the **Add Roles and Features** Wizard dialog box, click **Add Features**, and then click **Next**.
+    6. On the Select server roles page, click **Active Directory Domain Services** and **DNS Server**, then on the Add Roles and Features Wizard dialog box, click **Add Features**, and then click **Next**.
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.54.30%20PM.png?raw=true)
 
     7. On the Select features page, leave it as default and click **Next**.
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.54.47%20PM.png?raw=true)
 
-    9. On the Confirm installation selections page, click Install.
+    9. On the Confirm installation selections page, click **Install**.
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.55.01%20PM.png?raw=true)
 
-    10. On the Results page, verify that the installation succeeded, and click Promote this server to a domain controller to start the Active Directory Domain Services Configuration Wizard.
+    10. On the Results page, verify that the installation succeeded, and click **Promote this server to a domain controller** to start the Active Directory Domain Services Configuration Wizard.
 
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%208.22.55%20AM.png?raw=true)
 
-    11. Select add a new forest and create the root domain name as "avengers.lan". Click **Next**
+    11. Select **add a new forest** and create the root domain name as "avengers.lan". Click **Next**
 
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%208.23.38%20AM.png?raw=true)
 
-    12. Leav all options as default on the domain contoller options page, input our default password, and select **Next**
+    12. Leave all options as default on the domain contoller options page, input our default password, and select **Next**
 
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%208.26.37%20AM.png?raw=true)
 
