@@ -23,3 +23,21 @@ Set the computer name to match the machine we are installing (reference the IP a
 - Change the PC name as shown and click **Restart** to apply the changes.
 
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%209.54.47%20AM.png?raw=true)
+
+2. Once the Host has restarted we need to update the IP address information.
+
+- Navigate to Control Panel
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.01.40%20AM.png?raw=true)
+
+- Click on **Network and Internet** -> **Network and Sharing** -> **Change Adapter Options**
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.03.39%20AM.png?raw=true)
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.03.54%20AM.png?raw=true)
+
+- Right click on the adapter and select **Properties**. Deselect IPv6, select IPv4 and select **Properties** and set the IP configuraiton to match the below (change the IP address to match the host you're installing. Reference the IP address list.)
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.04.16%20AM.png?raw=true)
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.06.05%20AM.png?raw=true)
+
+- Select **Ok** and **Close**
