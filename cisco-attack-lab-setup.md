@@ -70,17 +70,17 @@ interface range GigabitEthernet1/0/25-36
 
 ```
 interface Vlan10
- ip address 10.1.10.1 255.255.255.0
+ ip address 192.168.10.1 255.255.255.0
  no shutdown
  exit
 
 interface Vlan20
- ip address 10.1.20.1 255.255.255.0
+ ip address 192.168.20.1 255.255.255.0
  no shutdown
  exit
 
 interface Vlan30
- ip address 10.1.30.1 255.255.255.0
+ ip address 192.168.30.1 255.255.255.0
  no shutdown
  exit
 ```
