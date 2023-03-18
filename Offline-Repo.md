@@ -341,7 +341,7 @@ sudo dnf install wget -y
 ```
 
 
-## <u>Grab Windows Active Directory Dependencies</u>
+## <u>Download Windows Active Directory Dependencies</u>
 
 ```
 mkdir /usr/share/nginx/html/repos/windows
