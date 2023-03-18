@@ -58,3 +58,30 @@ Do you want to restart(Y/n): Y  #To restart
 
     10. On the Results page, verify that the installation succeeded, and click Promote this server to a domain controller to start the Active Directory Domain Services Configuration Wizard.
 
+    ![image]()
+
+    11. Select add a new forest and create the root domain name as "avengers.lan". Click **Next**
+
+    ![image]()
+
+    12. Leav all options as default on the domain contoller options page, input our default password, and select **Next**
+
+    ![image]()
+
+    13. On the DNS Options page, leave the defaults and click **Next**
+
+    ![image]()
+    
+    14. The wizard should automatically recognize our netbios name. Click **Next**.
+
+    ![image]()
+
+    15. Leave the default paths and click **Next**
+
+    ![image]()
+
+    16. Click **Next** on the reviw options page.
+
+    17. Click **Install**
+
+    ![image]()
