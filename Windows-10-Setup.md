@@ -41,3 +41,33 @@ Set the computer name to match the machine we are installing (reference the IP a
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.06.05%20AM.png?raw=true)
 
 - Select **Ok** and **Close**
+
+3. Join the host to our domain
+
+    1. Navigate to System and Security, and then click System.
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.11.51%20AM.png?raw=true)
+
+    2. Under Computer name, domain, and workgroup settings, click **Change settings**.
+
+    3. Scroll to the bottom and click **Advanced Settings**
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.12.45%20AM.png?raw=true)
+
+    3. Under the Computer Name tab, click **Change**.
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.13.20%20AM.png?raw=true)
+
+    4. Under Member of, click Domain, type the name of the our avengers domain, and then click **OK**.
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.14.13%20AM.png?raw=true)
+
+    5. Type the credentials of the domain admin
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.15.02%20AM.png?raw=true)
+
+    - You should now see "welcome to the avengers.lan domain"
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.15.24%20AM.png?raw=true)
+
+    5. Restart the computer.
