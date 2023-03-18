@@ -4,11 +4,14 @@
 
 ## ***<b><u>Put ESXI Windows VM setup instructions</u></b>***
 
-Install standard datacenter (desktop experience). Your install will initally be an evaluation edition.
+Install standard datacenter (desktop experience). Your install will initally be an evaluation edition. We are going to set the IP address information and grab our Windows Server license key from our repository VM.
 
-Open a command prompt as administrator and type the following command to upgrade your server from the evaluation license:
+***ADD IP ADDRESS SETUP AND GRABBING PRODUCT KEY FROM THE REPO***
+
+Open a command prompt as administrator and copy the following command from the file you just downloaded to upgrade your server from the evaluation license:
 
 ```
 DISM /online /Set-Edition:ServerStandard /ProductKey:77KDY-N2CQ8-JVWH3-8GXTV-462HP /AcceptEula
 
-Do you want to restart(Y/n): Y  #To restart
+Do You Want To Restart The Computer Now? (Y/N): Y  #To restart
+```

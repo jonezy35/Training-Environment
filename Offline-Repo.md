@@ -348,7 +348,9 @@ mkdir /usr/share/nginx/html/repos/windows
 ```
 
 ```
-cd /usr/share/nginx/html/repos/windows 
+cd /usr/share/nginx/html/repos/windows
+
+echo "DISM /online /Set-Edition:ServerStandard /ProductKey:77KDY-N2CQ8-JVWH3-8GXTV-462HP /AcceptEula" > server_upgrade.txt
 
 curl -L -O https://download.microsoft.com/download/2/5/8/258D30CF-CA4C-433A-A618-FB7E6BCC4EEE/ExchangeServer2016-x64-cu12.iso
 ```

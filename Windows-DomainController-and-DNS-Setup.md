@@ -1,10 +1,10 @@
 # <u> Users VLAN Windows Domain Controller & DNS Setup</u>
 
-## <u>***NOTE***</u>
-
-In order to test the DNS setup below, you need to have already setup the Users VLAN offline repository (linux) VM
+### <u>***NOTE</u>: In order to test the DNS setup below, you need to have already setup the Users VLAN offline repository (linux) VM***
 
 ## ***<b><u>Put ESXI Windows VM setup instructions</u></b>***
+
+***ADD IP ADDRESS SETUP AND GRABBING PRODUCT KEY FROM THE REPO***
 
 Install standard datacenter (desktop experience). Your install will initally be an evaluation edition.
 
@@ -13,7 +13,7 @@ Open a command prompt as administrator and type the following command to upgrade
 ```
 DISM /online /Set-Edition:ServerStandard /ProductKey:77KDY-N2CQ8-JVWH3-8GXTV-462HP /AcceptEula
 
-Do you want to restart(Y/n): Y  #To restart
+Do You Want To Restart The Computer Now? (Y/N) Y  #To restart
 ```
 
 <u>Installing Windows Domain Controller and DNS Server</u>
