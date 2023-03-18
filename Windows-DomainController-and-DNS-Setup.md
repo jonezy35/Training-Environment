@@ -1,4 +1,8 @@
-# <u> User VLAN Windows Domain Controller & DNS Setup</u>
+# <u> Users VLAN Windows Domain Controller & DNS Setup</u>
+
+## <u>***NOTE***</u>
+
+In order to test the DNS setup below, you need to have already setup the Users VLAN offline repository (linux) VM
 
 ## ***<b><u>Put ESXI Windows VM setup instructions</u></b>***
 
@@ -85,3 +89,26 @@ Do you want to restart(Y/n): Y  #To restart
     17. Click **Install**
 
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%208.29.31%20AM.png?raw=true)
+
+
+## <u> Adding DNS entries</u>
+
+Once the server restarts, we need to login and add our DNS entries.
+
+1. Click on **Tools** -> **DNS**
+
+![image]()
+
+2. Click on **DC** -> **Forward Lookup Zones** -> **AVENGERS.lan**
+
+3. Right click the empty white space and choose **New Host (A or AAA)**
+
+![image]()
+
+4. Add our offline repository
+
+![image]()
+
+5. If your DNS entry was successful, you should now be able to navigate to the repo.avengers.lan webpage.
+
+![image]()
