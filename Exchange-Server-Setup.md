@@ -21,3 +21,5 @@ Do You Want To Restart The Computer Now? (Y/N): Y  #To restart
 ***Join Domain***
 
 ***Grab and install prerequisites (.NET may take awhile to install)***
+
+***Exchange Server Install (May take a few hours)***
