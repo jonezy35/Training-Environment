@@ -6,8 +6,6 @@
 
 `sudo su`
 
-`hostnamectl set-hostname repo.dmss.lan`
-
 ```
 hostnamectl set-hostname repo.dmss.lan
 ```
@@ -131,13 +129,13 @@ Set the following in your named.conf
 
 ```
 acl internal {
-	192.168.10.0/24;
+	10.10.10.0/24;
         localhost;
         localnets;
 };
 
 options {
-        listen-on port 53 { 192.168.10.50; };
+        listen-on port 53 { 10.10.10.50; };
         listen-on-v6 port 53 { ::1; };
         directory       "/var/named";
         dump-file       "/var/named/data/cache_dump.db";
