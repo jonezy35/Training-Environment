@@ -20,3 +20,4 @@
 | 192.168.10.50| DC/DNS  |Users VLAN |
 | 192.168.10.51|Exchange |Users VLAN |
 | 192.168.10.10| Win1    |Users VLAN |
+| 192.168.10.75| Repo    |Users VLAN |
