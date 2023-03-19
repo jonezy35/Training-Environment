@@ -36,7 +36,7 @@ Exit nmtui by hitting **Ok** at the bottom. You can now check that your IP addre
 
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.11.23%20PM.png?raw=true)
 
-<u>Setup Nginx web server</u>
+### <u>Setup Nginx web server</u>
 
 The nginx web server will serve the offline repository to other offline boxes. (We installed nginx at the beginning so we don't need to do that now)
 
