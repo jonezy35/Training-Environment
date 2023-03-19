@@ -15,9 +15,15 @@
 | 10.10.10.104 | sensor  | DMSS    |
 
 ## <u>Attack Lab</u>
-| IP           | Host    | Network   |
-|--------------|---------|-----------|
-| 192.168.10.50| DC/DNS  |Users VLAN |
-| 192.168.10.51|Exchange |Users VLAN |
-| 192.168.10.10| Win1    |Users VLAN |
-| 192.168.10.75| Repo    |Users VLAN |
+| IP            | Host     | Network    |
+|---------------|----------|------------|
+| 192.168.10.50 | DC/DNS   | Users VLAN |
+| 192.168.10.51 | Exchange | Users VLAN |
+| 192.168.10.52 | File     | Users VLAN |
+| 192.168.10.70 | Web      | Users VLAN |
+| 192.168.10.75 | Repo     | Users VLAN |
+| 192.168.10.10 | Win1     | Users VLAN |
+| 192.168.10.11 | Win2     | Users VLAN |
+| 192.168.10.12 | Win3     | Users VLAN |
+| 192.168.10.13 | Win4     | Users VLAN |
+| 192.168.10.14 | Win5     | Users VLAN |
