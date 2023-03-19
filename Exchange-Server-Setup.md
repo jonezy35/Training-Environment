@@ -94,7 +94,7 @@ You should now see a welcome to the domain pop up:
 
 Restart the server
 
-You should now login as the domain administrator to continuse configuring the server.
+You should now login as the domain administrator to continue configuring the server.
 
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.31.34%20PM.png?raw=true)
 
