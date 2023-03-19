@@ -153,7 +153,7 @@ Once the server restarts, we need to login and add our DNS entries.
 6. Continue adding all static DNS A record entries so that our DNS server has all hosts added from the attached IP address list for the Users VLAN.
 
 
-To keep us up to date, let's now install microsoft edge.
+### To keep us up to date, let's now install microsoft edge.
 
 Navigate to the windows folder on repo.avengers.lan and download the Microsoft Edge msi
 
