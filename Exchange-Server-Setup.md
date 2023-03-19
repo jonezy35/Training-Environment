@@ -139,8 +139,6 @@ You may also have to select **keep** on all the files before they will save.
 4. Restart the server before installing the exchange server.
 
 
-***Exchange Server Install (May take a few hours)***
-
 ### Now that we have the dependencies installed, it's time to install the Exchange Server
 
 1. Navigate back to the repo.avengers.lan/windows page and click on the Exchange Server ISO to download it.
