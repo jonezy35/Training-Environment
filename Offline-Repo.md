@@ -64,6 +64,8 @@ extras                                                              AlmaLinux 9 
 ```
 
 <u>Clone repositories</u>
+
+These commands will take awhile to run, and tend to hang before they finish. Don't worry if the command hangs after completing.
 ```
 dnf reposync -g --delete -p /usr/share/nginx/html/repos/ --repoid=appstream --newest-only --download-metadata
 
