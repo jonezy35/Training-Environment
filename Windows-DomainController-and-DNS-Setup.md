@@ -2,9 +2,24 @@
 
 ### <u>***NOTE</u>: In order to test the DNS setup below, you need to have already setup the Users VLAN offline repository (linux) VM***
 
-## ***<b><u>Put ESXI Windows VM setup instructions</u></b>***
+## <b><u>Install</u></b>
 
-***ADD IP ADDRESS SETUP AND GRABBING PRODUCT KEY FROM THE REPO***
+Once you load the VM and start it, if you see the below screen, you need to press "Send CTRL+ALT+DEL" and wait for the prompt "press any key to boot from CD or DVD". Once you see that prompt, press any key to boot into the ISO.
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.23.43%20PM.png?raw=true)
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.23.58%20PM.png?raw=true)
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.24.45%20PM.png?raw=true)
+
+Work through the installer as normal, and ensure to select Windows Server 2016 Standard Evaluation (Desktop Experience) when prompted.
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.27.43%20PM.png?raw=true)
+
+Choose Custom Install
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.28.33%20PM.png?raw=true)
+
 
 #### Our server install is currently in evaluation mode. To upgrade from evaluation, we need to run a simple command with our product key. We will grab this command from our repo VM.
 
