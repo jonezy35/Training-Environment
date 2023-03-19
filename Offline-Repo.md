@@ -9,9 +9,6 @@
 
 `sudo su`
 
-```
-hostnamectl set-hostname repo.dmss.lan
-```
 
 <u>Import RPM GPG key</u>
 
@@ -145,6 +142,10 @@ curl -L -O curl -L -O https://download.microsoft.com/download/2/E/6/2E61CFA4-993
 # <u>IMPORTANT:</u> 
 If you are setting up this offline repo for the Users VLAN, skip the rest of this and move to the **Users-VLAN-Offline-Repo** SOP for the rest of the configuration. If you're setting up the DMSS repo, continue with the below instructions. 
 
+
+```
+hostnamectl set-hostname repo.dmss.lan
+```
 
 ### <u>Install and Configure DNS server on repo VM</u>
 
