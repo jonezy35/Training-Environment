@@ -48,11 +48,11 @@ Open the browser and navigate to http://repo.avengers.lan
 
 Select windows
 
-![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.43.43%20PM.png?raw=true)
+![image]()
 
 Select server_upgrade.txt
 
-![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.43.53%20PM.png?raw=true)
+![image]()
 
 Open a command prompt as administrator and copy the following command from your browser to upgrade your server from the evaluation license:
 
@@ -60,7 +60,7 @@ Open a command prompt as administrator and copy the following command from your 
 DISM /online /Set-Edition:ServerStandard /ProductKey:77KDY-N2CQ8-JVWH3-8GXTV-462HP /AcceptEula
 ```
 
-![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.45.21%20PM.png?raw=true)
+![image]()
 
 ```
 Do You Want To Restart The Computer Now? (Y/N) Y  #To restart
