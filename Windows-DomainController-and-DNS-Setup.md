@@ -114,3 +114,6 @@ Once the server restarts, we need to login and add our DNS entries.
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%208.47.48%20AM.png?raw=true)
 
 6. Continue adding all static DNS A record entries so that our DNS server has all hosts added from the attached IP address list for the Users VLAN.
+
+
+## ***Add section about adding user accounts***
