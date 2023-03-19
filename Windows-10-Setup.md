@@ -22,7 +22,25 @@ Choose Custom Install
 
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.28.33%20PM.png?raw=true)
 
-Finish working through the installer as normal
+Finish working through the installer as normal.
+
+Select **i don't have internet** -> **continue with limited setup** -> and create our dmss user.
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%203.29.58%20PM.png?raw=true)
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%203.30.09%20PM.png?raw=true)
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%203.30.26%20PM.png?raw=true)
+
+Deselect all privacy settings
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%203.32.35%20PM.png?raw=true)
+
+Select **not now** for cortana
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%203.32.53%20PM.png?raw=true)
+
+
 
 <u>To join the host to our domain</u>
 
