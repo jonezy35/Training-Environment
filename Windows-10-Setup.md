@@ -84,8 +84,6 @@ Set the computer name to match the machine we are installing (reference the IP a
 
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.11.51%20AM.png?raw=true)
 
-    2. Under Computer name, domain, and workgroup settings, click **Change settings**.
-
     3. Scroll to the bottom and click **Advanced Settings**
 
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-18%20at%2010.12.45%20AM.png?raw=true)
