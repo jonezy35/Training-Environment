@@ -136,5 +136,57 @@ You may also have to select **keep** on all the files before they will save.
 
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.40.38%20PM.png?raw=true)
 
+4. Restart the server before installing the exchange server.
+
 
 ***Exchange Server Install (May take a few hours)***
+
+### Now that we have the dependencies installed, it's time to install the Exchange Server
+
+1. Navigate back to the repo.avengers.lan/windows page and click on the Exchange Server ISO to download it.
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.51.03%20PM.png?raw=true)
+
+2. Right click on the ISO and select **Mount**
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.54.29%20PM.png?raw=true)
+
+3. Scroll down, right click on **Setup** and click **Run as Administrator**
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.55.32%20PM.png?raw=true)
+
+4. The installation wizard will start in a few moments.
+
+- Select **Don't Check for updates**
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.56.03%20PM.png?raw=true)
+
+- Select **Next**
+
+- Accept the license agreement
+
+- Select **Don't use recommended settings**
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.58.38%20PM.png?raw=true)
+
+- Select the roles in the image below:
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.59.26%20PM.png?raw=true)
+
+- Choose the default install location
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.59.31%20PM.png?raw=true)
+
+- Change the organization name to Avengers
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%205.00.09%20PM.png?raw=true)
+
+- As we are setting this up for a CTE environment, disable malware scanning:
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%205.00.14%20PM.png?raw=true)
+
+- The prerequisite check will pass, as we just installed all needed dependencies. Once the check is done, click **Install**
+
+<u>Note:</u> The Exchange Server install could take a few hours in some cases. 
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%205.11.17%20PM.png?raw=true)
