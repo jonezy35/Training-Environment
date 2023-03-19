@@ -112,6 +112,37 @@ curl -L -O https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.
 curl -L -O https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.10.2-windows-x86_64.msi
 ```
 
+## <u>Download Windows Active Directory Dependencies</u>
+
+```
+mkdir /usr/share/nginx/html/repos/windows
+```
+
+```
+cd /usr/share/nginx/html/repos/windows
+
+echo "DISM /online /Set-Edition:ServerStandard /ProductKey:77KDY-N2CQ8-JVWH3-8GXTV-462HP /AcceptEula" > server_upgrade.txt
+
+curl -L -O https://download.microsoft.com/download/2/5/8/258D30CF-CA4C-433A-A618-FB7E6BCC4EEE/ExchangeServer2016-x64-cu12.iso
+```
+
+```
+curl -L https://go.microsoft.com/fwlink/?LinkID=2099383 --output net-installer.exe
+```
+```
+curl -L -O https://download.microsoft.com/download/2/C/4/2C47A5C1-A1F3-4843-B9FE-84C0032C61EC/UcmaRuntimeSetup.exe
+```
+
+```
+curl -L -O curl -L -O https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe
+```
+
+
+
+# <u>IMPORTANT:</u> 
+If you are setting up this offline repo for the Users VLAN, skip the rest of this and move to the **Users-VLAN-Offline-Repo** SOP for the rest of the configuration. If you're setting up the DMSS repo, continue with the below instructions. 
+
+
 ### <u>Install and Configure DNS server on repo VM</u>
 
 ```
@@ -340,28 +371,3 @@ sudo dnf install vim -y
 sudo dnf install wget -y
 ```
 
-
-## <u>Download Windows Active Directory Dependencies</u>
-
-```
-mkdir /usr/share/nginx/html/repos/windows
-```
-
-```
-cd /usr/share/nginx/html/repos/windows
-
-echo "DISM /online /Set-Edition:ServerStandard /ProductKey:77KDY-N2CQ8-JVWH3-8GXTV-462HP /AcceptEula" > server_upgrade.txt
-
-curl -L -O https://download.microsoft.com/download/2/5/8/258D30CF-CA4C-433A-A618-FB7E6BCC4EEE/ExchangeServer2016-x64-cu12.iso
-```
-
-```
-curl -L https://go.microsoft.com/fwlink/?LinkID=2099383 --output net-installer.exe
-```
-```
-curl -L -O https://download.microsoft.com/download/2/C/4/2C47A5C1-A1F3-4843-B9FE-84C0032C61EC/UcmaRuntimeSetup.exe
-```
-
-```
-curl -L -O curl -L -O https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe
-```
