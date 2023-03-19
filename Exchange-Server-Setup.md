@@ -98,9 +98,43 @@ You should now login as the domain administrator to continuse configuring the se
 
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.31.34%20PM.png?raw=true)
 
-***Install Microsoft Edge***
+### Install Microsoft Edge
+
+To keep us up to date since IE is deprecated, let's install Microsoft Edge
+
+Navigate to the windows folder on repo.avengers.lan and download the Microsoft Edge msi
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%202.46.26%20PM.png?raw=true)
+
+You may have to add the site as a trusted site if you get a pop up error.
+
+Save the file and when it's downloaded, right click the file and choose **Install**.
+
+Once it's installed, there will be an edge icon on your desktop (sometimes you may need to logout and sign back in). You can now pin edge to your taskbar and remove internet explorer.
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%202.54.00%20PM.png?raw=true)
 
 
-***Grab and install prerequisites (.NET may take awhile to install)***
+### Install all dependencies needed for the Exchange Server install
+
+1. Navigate to http://repo.avengers.lan on microsoft edge and click on windows.
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.37.24%20PM.png?raw=true)
+
+2. Click on the following files to download them
+    - Ucmaruntimesetup.exe
+    - net-installer.exe
+    - vcredist_x64.exe
+
+You may have to add the site as trusted if you get a pop up.
+
+You may also have to select **keep** on all the files before they will save.
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.39.57%20PM.png?raw=true)
+
+3. Right click on each file and click **Run as Administrator**. Follow all install instructions as normal. net-installer may take awhile to install
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.40.38%20PM.png?raw=true)
+
 
 ***Exchange Server Install (May take a few hours)***
