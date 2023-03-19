@@ -152,6 +152,8 @@ If you are setting up this offline repo for the Users VLAN, skip the rest of thi
 hostnamectl set-hostname repo.dmss.lan
 ```
 
+## ***Add set IP Address section***
+
 ### <u>Configure DNS server on repo VM</u>
 
 ```
