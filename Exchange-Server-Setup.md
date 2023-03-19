@@ -44,15 +44,19 @@ Set the default administrator password
 
     - Press **OK** and **Close**.
 
+    - If prompted, select **Yes**
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.13.50%20PM.png?raw=true)
+
 Open the browser and navigate to http://repo.avengers.lan
 
 Select windows
 
-![image]()
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.14.49%20PM.png?raw=true)
 
 Select server_upgrade.txt
 
-![image]()
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.14.59%20PM.png?raw=true)
 
 Open a command prompt as administrator and copy the following command from your browser to upgrade your server from the evaluation license:
 
@@ -60,7 +64,7 @@ Open a command prompt as administrator and copy the following command from your 
 DISM /online /Set-Edition:ServerStandard /ProductKey:77KDY-N2CQ8-JVWH3-8GXTV-462HP /AcceptEula
 ```
 
-![image]()
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.15.47%20PM.png?raw=true)
 
 ```
 Do You Want To Restart The Computer Now? (Y/N) Y  #To restart
