@@ -142,6 +142,10 @@ curl -L -O https://download.microsoft.com/download/2/C/4/2C47A5C1-A1F3-4843-B9FE
 curl -L -O https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe
 ```
 
+```
+wget https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/0ac7e1bd-ebbe-4895-8694-1952a345a987/MicrosoftEdgeEnterpriseX64.msi
+```
+
 We are now finished downloading all of the required repositories/ dependencies. For security reasons, you should now remove the wireless NIC from the laptop to airgap our system from the internet.
 
 You can now upload this VM to the Users VLAN on the attack lab server and follow the Users-Vlan-Offline-Repo SOP. 
