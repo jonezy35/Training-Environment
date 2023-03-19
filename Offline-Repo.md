@@ -35,6 +35,7 @@ sudo dnf install htop -y
 sudo dnf install git -y
 sudo dnf install vim -y 
 sudo dnf install wget -y
+dnf install bind bind-utils -y
 dnf install docker-ce docker-ce-cli containerd.io -y
 ```
 
@@ -151,10 +152,9 @@ If you are setting up this offline repo for the Users VLAN, skip the rest of thi
 hostnamectl set-hostname repo.dmss.lan
 ```
 
-### <u>Install and Configure DNS server on repo VM</u>
+### <u>Configure DNS server on repo VM</u>
 
 ```
-dnf install bind bind-utils -y
 systemctl enable --now named
 
 systemctl status named  #Check to ensure it started with no errors
