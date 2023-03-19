@@ -13,7 +13,6 @@
 | 10.10.10.102 | es3     | DMSS    |
 | 10.10.10.103 | kb      | DMSS    |
 | 10.10.10.104 | sensor  | DMSS    |
-| 10.10.10.105 | logstash| DMSS    |
 
 ## <u>Attack Lab</u>
 | IP            | Host     | Network    |
