@@ -167,7 +167,6 @@ Once it's installed, there will be an edge icon on your desktop (sometimes you m
 
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%202.54.00%20PM.png?raw=true)
 
-## ***Add section about adding user accounts***
 
 ## <u>Adding Domain Accounts</u>
 
