@@ -112,6 +112,8 @@ curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.
 curl -L -O https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.10.2-windows-x86_64.zip
 
 curl -L -O https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.10.2-windows-x86_64.msi
+
+curl -L -O https://artifacts.elastic.co/downloads/logstash/logstash-7.10.2-x86_64.rpm
 ```
 
 ## <u>Download Windows Active Directory Dependencies</u>
