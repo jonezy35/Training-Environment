@@ -1,5 +1,8 @@
 # <u>Instructions on creating offline DNF repository</u>
 
+## Add Laptop & VMWare Workstation Pro setup
+
+
 ### Need at least 50Gb free storage
 
 <u>Switch to root</u>
