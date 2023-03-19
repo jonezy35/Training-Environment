@@ -6,6 +6,8 @@
 
 ***ADD IP ADDRESS SETUP AND GRABBING PRODUCT KEY FROM THE REPO***
 
+#### Our server install is currently in evaluation mode. To upgrade from evaluation, we need to run a simple command with our product key. We will grab this command from our repo VM.
+
 - Set static IP Address
     - Navigate to adapter options
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-17%20at%206.30.25%20PM.png?raw=true)
