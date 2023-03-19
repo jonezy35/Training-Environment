@@ -4,10 +4,10 @@
 
 | IP           | Host    | Network |
 |--------------|---------|---------|
-| 10.10.10.50  | repo/ns | DMSS    |
-| 10.10.10.10  | win1    | DMSS    |
-| 10.10.10.11  | win2    | DMSS    |
-| 10.10.10.12  | linux   | DMSS    |
+| 10.10.10.50  | Repo/NS | DMSS    |
+| 10.10.10.10  | Win1    | DMSS    |
+| 10.10.10.11  | Win2    | DMSS    |
+| 10.10.10.12  | Linux   | DMSS    |
 | 10.10.10.100 | es1     | DMSS    |
 | 10.10.10.101 | es2     | DMSS    |
 | 10.10.10.102 | es3     | DMSS    |
@@ -27,3 +27,11 @@
 | 192.168.10.12 | Win3     | Users VLAN |
 | 192.168.10.13 | Win4     | Users VLAN |
 | 192.168.10.14 | Win5     | Users VLAN |
+
+
+| IP            | Host  | Network       |
+|---------------|-------|---------------|
+| 192.168.20.10 | Kali1 | Red Team VLAN |
+| 192.168.20.11 | Kali2 | Red Team VLAN |
+| 192.168.20.12 | Kali3 | Red Team VLAN |
+| 192.168.20.13 | Kali4 | Red Team VLAN |
