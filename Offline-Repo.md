@@ -35,7 +35,7 @@ sudo dnf install htop -y
 sudo dnf install git -y
 sudo dnf install vim -y 
 sudo dnf install wget -y
-dnf install docker-ce docker-ce-cli containerd.io
+dnf install docker-ce docker-ce-cli containerd.io -y
 ```
 
 <u>Create Local Repository</u>
