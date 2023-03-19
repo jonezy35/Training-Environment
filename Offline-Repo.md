@@ -142,7 +142,7 @@ curl -L -O https://download.microsoft.com/download/2/C/4/2C47A5C1-A1F3-4843-B9FE
 curl -L -O https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe
 ```
 
-
+## For security reasons, you should now remove the wireless NIC from the laptop to airgap our system from the internet. The rest of this setup can be done offline.
 
 # <u>IMPORTANT:</u> 
 If you are setting up this offline repo for the Users VLAN, skip the rest of this and move to the **Users-VLAN-Offline-Repo** SOP for the rest of the configuration. If you're setting up the DMSS repo, continue with the below instructions. 
