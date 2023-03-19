@@ -70,11 +70,35 @@ DISM /online /Set-Edition:ServerStandard /ProductKey:77KDY-N2CQ8-JVWH3-8GXTV-462
 Do You Want To Restart The Computer Now? (Y/N) Y  #To restart
 ```
 
-***Change Computer Name***
+### Change Computer Name and Join Domain
 
-***Join Domain***
+1. Navigate to **control panel** -> **System and Security** -> **System** and click **Change Settings**
 
-***Install Microsoft Edte***
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.25.09%20PM.png?raw=true)
+
+2. Under the Computer Name tab, select **Change**
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.26.47%20PM.png?raw=true)
+
+3. Change the Computer Name to "Exchange" and the domain to "avengers.lan"
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.27.36%20PM.png?raw=true)
+
+4. Enter the domain administrator credentials
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.28.19%20PM.png?raw=true)
+
+You should now see a welcome to the domain pop up:
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.28.26%20PM.png?raw=true)
+
+Restart the server
+
+You should now login as the domain administrator to continuse configuring the server.
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%204.31.34%20PM.png?raw=true)
+
+***Install Microsoft Edge***
 
 
 ***Grab and install prerequisites (.NET may take awhile to install)***
