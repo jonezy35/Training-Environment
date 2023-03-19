@@ -44,11 +44,25 @@ We now need to reach out to the repository to grab our license information. We h
 
 Install standard datacenter (desktop experience). Your install will initally be an evaluation edition.
 
-Open a command prompt as administrator and type the following command to upgrade your server from the evaluation license:
+Open the browser and navigate to http://192.168.10.75
+
+Select windows
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.43.43%20PM.png?raw=true)
+
+Select server_upgrade.txt
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.43.53%20PM.png?raw=true)
+
+Open a command prompt as administrator and copy the following command from your browser to upgrade your server from the evaluation license:
 
 ```
 DISM /online /Set-Edition:ServerStandard /ProductKey:77KDY-N2CQ8-JVWH3-8GXTV-462HP /AcceptEula
+```
 
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.45.21%20PM.png?raw=true)
+
+```
 Do You Want To Restart The Computer Now? (Y/N) Y  #To restart
 ```
 
