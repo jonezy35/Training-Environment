@@ -4,7 +4,7 @@
 
 ## ***<b><u>Put ESXI Windows VM setup instructions</u></b>***
 
-I## <b><u>Install</u></b>
+## <b><u>Install</u></b>
 
 Once you load the VM and start it, if you see the below screen, you need to press "Send CTRL+ALT+DEL" and wait for the prompt "press any key to boot from CD or DVD". Once you see that prompt, press any key to boot into the ISO.
 
