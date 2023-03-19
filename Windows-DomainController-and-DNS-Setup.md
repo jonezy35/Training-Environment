@@ -168,3 +168,19 @@ Once it's installed, there will be an edge icon on your desktop (sometimes you m
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%202.54.00%20PM.png?raw=true)
 
 ## ***Add section about adding user accounts***
+
+## <u>Adding Domain Accounts</u>
+
+1. In server manager, click on **Tools** -> **Active Directory Users and Computers**
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%202.55.47%20PM.png?raw=true)
+
+2. Click on **avengers.lan** -> **Users** -> and click on the icon in the image below to add a user.
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%202.56.37%20PM.png?raw=true)
+
+3. Add all users from the Users list provided, and ensure you check **password never expires**
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%202.58.32%20PM.png?raw=true)
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%202.58.49%20PM.png?raw=true)
