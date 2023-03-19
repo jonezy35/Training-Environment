@@ -2,9 +2,25 @@
 
 ### If you haven't setup the Domain Controller and DNS Server yet, go back and do that before setting up the Windows hosts.
 
-### ***Put ESXI Install Instructions and initial install instructions***
+### ***Put ESXI Install Instructionss***
+
+## <b><u>Install</u></b>
+
+Once you load the VM and start it, if you see the below screen, you need to press "Send CTRL+ALT+DEL" and wait for the prompt "press any key to boot from CD or DVD". Once you see that prompt, press any key to boot into the ISO.
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.23.43%20PM.png?raw=true)
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.23.58%20PM.png?raw=true)
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.24.45%20PM.png?raw=true)
+
+Work through the installer as normal, and when asked for a key input the one below:
 
 Windows 10 Pro Key: `W269N-WFGWX-YVC9B-4J6C9-T83GX`
+
+Choose Custom Install
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.28.33%20PM.png?raw=true)
 
 <u>To join the host to our domain</u>
 
