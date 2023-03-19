@@ -22,6 +22,8 @@ Choose Custom Install
 
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.28.33%20PM.png?raw=true)
 
+Finish working through the installer as normal
+
 <u>To join the host to our domain</u>
 
 1. Change Computer Name
