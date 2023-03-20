@@ -188,3 +188,7 @@ You may also have to select **keep** on all the files before they will save.
 <u>Note:</u> The Exchange Server install could take a few hours in some cases. 
 
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%205.11.17%20PM.png?raw=true)
+
+- Once the install is finished, check ***"Launch Exchange Administration Center"*** and click ***Finish***
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%208.06.23%20AM.png?raw=true)
