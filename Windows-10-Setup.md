@@ -110,3 +110,34 @@ Set the computer name to match the machine we are installing (reference the IP a
     You should now be able to sign in as any one of the domain users
 
     ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%203.45.32%20PM.png?raw=true)
+
+
+    ### Connecting the Mail client to our Exchange Server
+
+    Ensure you have already finished the Exchange Server Setup SOP
+
+    1. Open your mail client, click **Add an Account** and scroll down to click on **Advanced Setup**
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%2011.48.28%20AM.png?raw=true)
+
+    2. Click **Exchange ActiveSync** 
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%2011.48.33%20AM.png?raw=true)
+
+    3. Enter the following information, changing the account information depending on the account you're setting up.
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%2011.49.15%20AM.png?raw=true)
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%2011.49.20%20AM.png?raw=true)
+
+    4. Your email account is now setup, and you can send a test email to yourself or to another account to verify. It may take a little bit for the email to send from the outbox since this is teh first time we're sending an email. You may also have to accept the insecure ssl pop up.
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%2011.49.56%20AM.png?raw=true)
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%2011.50.21%20AM.png?raw=true)
+
+    5. After a bit, our email should send and appear in our inbox!
+
+    ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%2011.51.21%20AM.png?raw=true)
+
+    6. Go over each of these steps for all users.
