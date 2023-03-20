@@ -189,6 +189,28 @@ You may also have to select **keep** on all the files before they will save.
 
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%205.11.17%20PM.png?raw=true)
 
-- Once the install is finished, check ***"Launch Exchange Administration Center"*** and click ***Finish***
+- Once the install is finished, check **"Launch Exchange Administration Center"** and click **Finish**
 
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%208.06.23%20AM.png?raw=true)
+
+### Create mailboxes for each domain user
+
+1. Sign into the Exchange Admin Center
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%208.30.08%20AM.png?raw=true)
+
+3. Select the **+** button and select **User Mailbox**
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%208.35.42%20AM.png?raw=true)
+
+4. Add the address you want the user to have and select **Browse** 
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%208.35.56%20AM.png?raw=true)
+
+5. Select the User you are creating the mailbox for
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%208.36.04%20AM.png?raw=true)
+
+6. Scroll down and select **Save**
+
+![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%208.36.14%20AM.png?raw=true)
