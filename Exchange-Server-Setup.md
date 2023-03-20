@@ -216,3 +216,5 @@ You may also have to select **keep** on all the files before they will save.
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-20%20at%208.36.14%20AM.png?raw=true)
 
 7. Continue this process for each user in the domain.
+
+### Refer to the Windows 10 Setup SOP to connect the windows 10 clients to the exchange server
