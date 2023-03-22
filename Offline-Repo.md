@@ -104,17 +104,17 @@ cd /usr/share/nginx/html/repos/elastic
 
 wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.9-x86_64.rpm
 
-wget https://artifacts.elastic.co/downloads/kibana/kibana-7.10.2-x86_64.rpm
+wget https://artifacts.elastic.co/downloads/kibana/kibana-7.17.9-x86_64.rpm
 
-curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.10.2-x86_64.rpm
+curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.17.9-x86_64.rpm
 
-curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.10.2-x86_64.rpm
+curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.17.9-x86_64.rpm
 
-curl -L -O https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.10.2-windows-x86_64.zip
+curl -L -O https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.17.9-windows-x86_64.zip
 
-curl -L -O https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.10.2-windows-x86_64.msi
+curl -L -O https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.17.9-windows-x86_64.msi
 
-curl -L -O https://artifacts.elastic.co/downloads/logstash/logstash-7.10.2-x86_64.rpm
+curl -L -O https://artifacts.elastic.co/downloads/logstash/logstash-7.17.9-x86_64.rpm
 ```
 
 ## <u>Download Windows Active Directory Dependencies</u>
