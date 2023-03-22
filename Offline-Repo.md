@@ -102,7 +102,7 @@ Elastic Stack
 ```
 cd /usr/share/nginx/html/repos/elastic
 
-wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.10.2-x86_64.rpm
+wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-7.17.9-x86_64.rpm
 
 wget https://artifacts.elastic.co/downloads/kibana/kibana-7.10.2-x86_64.rpm
 
