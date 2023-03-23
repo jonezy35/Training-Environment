@@ -144,7 +144,7 @@ server {
 ```
 
 ```
-firewall-cmd --add-port 80/udp --permanent
+firewall-cmd --add-port 80/tcp --permanent
 firewall-cmd --reload
 firewall-cmd --list-all  #Check to ensure port 80 was added
 ```
