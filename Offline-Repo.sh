@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Switch to root
-sudo su
+#sudo su
 
 # Import RPM GPG key
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
@@ -33,7 +33,7 @@ mkdir -p /usr/share/nginx/html/repos/{baseos,appstream,crb,epel,elastic,extras,z
 #dnf repolist
 
 # Clone repositories
-dnf reposync -g --delete -p /usr/share/nginx/html/repos/ --repoid=appstream --newest-only --
+dnf reposync -g --delete -p /usr/share/nginx/html/repos/ --repoid=appstream --newest-only --download-metadata
 dnf reposync -g --delete -p /usr/share/nginx/html/repos/ --repoid=baseos --newest-only --download-metadata
 dnf reposync -g --delete -p /usr/share/nginx/html/repos/ --repoid=crb --newest-only --download-metadata
 dnf reposync -p /usr/share/nginx/html/repos/ --repoid=epel --newest-only --download-metadata
