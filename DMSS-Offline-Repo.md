@@ -151,9 +151,10 @@ firewall-cmd --list-all  #Check to ensure port 80 was added
 
 `systemctl restart nginx`
 
-<u>Configuring other Linux workstations to access the repository</u>
+### Create offline repo config to copy over to our other workstations:
 
 On repo.dmss.lan VM:
+
 ```
 sudo su
 ```
@@ -163,7 +164,7 @@ mv /etc/yum.repos.d/*.repo /tmp/
 ```
 
 ```
-vi /etc/yum.repos.d/localrepo.repo
+vim /etc/yum.repos.d/localrepo.repo
 ```
 
 Copy and paste the below into your localrepo.repo
@@ -199,6 +200,7 @@ baseurl=http://repo.dmss.lan/extras/
 gpgcheck=0
 enabled=1
 ```
+
 
 ```
 dnf clean all
