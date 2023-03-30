@@ -6,7 +6,7 @@
 
 ### Building Zeek
 
-Let us first pull the zeek source code from our repository (Don't forget the forward slash after zeek, otherwise it will pull the whole repo.dmss.lan page)
+Let us first pull the zeek source code from our repository
 
 ```
 wget http://repo.dmss.lan/zeek/zeek.tar.gz
