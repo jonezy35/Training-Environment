@@ -184,7 +184,7 @@ enabled=1
 
 [localrepo-crb]
 name=AlmaLinux CodeReadBuilder
-baseurl=http://repo.dmss.lan/appstream/
+baseurl=http://repo.dmss.lan/crb/
 gpgcheck=0
 enabled=1
 
