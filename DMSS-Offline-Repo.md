@@ -252,14 +252,27 @@ sudo dnf install net-tools -y
 sudo dnf install unzip -y
 
 #Install needed zeek dependencies
-sudo dnf install cmake make gcc gcc-c++ flex bison libpcap-devel openssl-devel python3 python3-devel swig zlib-devel -y
+sudo dnf install cmake -y
+sudo dnf install make -y
+sudo dnf install gcc -y 
+sudo dnf install gcc-c++ -y 
+sudo dnf install flex -y 
+sudo dnf install bison -y 
+sudo dnf install libpcap-devel -y
+sudo dnf install openssl-devel -y
+sudo dnf install python3 -y
+sudo dnf install python3-devel -y
+sudo dnf install swig -y 
+sudo dnf install zlib-devel -y
 
 #Install needed suricata dependencies
-sudo dnf install libpcre3 libpcre3-dbg libpcre3-dev build-essential libpcap-dev  -y \
-                libnet1-dev libyaml-0-2 libyaml-dev pkg-config zlib1g zlib1g-dev -y \
-                libcap-ng-dev libcap-ng0 make libmagic-dev -y        \
-                libnss3-dev libgeoip-dev liblua5.1-dev libhiredis-dev libevent-dev -y \
-                python-yaml rustc cargo -y
+#sudo dnf install libpcre3 libpcre3-dbg libpcre3-dev build-essential libpcap-dev  -y \
+#                libnet1-dev libyaml-0-2 libyaml-dev pkg-config zlib1g zlib1g-dev -y \
+#                libcap-ng-dev libcap-ng0 make libmagic-dev -y        \
+#                libnss3-dev libgeoip-dev liblua5.1-dev libhiredis-dev libevent-dev -y \
+#                python-yaml rustc cargo -y
+#
+echo "All dependencies are now installed"
 
 echo "All dependencies are now installed"
 ```
