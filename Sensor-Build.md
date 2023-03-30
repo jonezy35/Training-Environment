@@ -9,7 +9,7 @@
 Let us first pull the zeek source code from our repository (Don't forget the forward slash after zeek, otherwise it will pull the whole repo.dmss.lan page)
 
 ```
-wget -r http://repo.dmss.lan/zeek/
+wget --no-parent -r http://repo.dmss.lan/zeek/
 
 cd repo.dmss.lan/zeek/zeek/
 ```

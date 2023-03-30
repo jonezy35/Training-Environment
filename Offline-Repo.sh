@@ -44,7 +44,8 @@ dnf reposync --delete -p /usr/share/nginx/html/repos/ --repoid=docker-ce-stable 
 
 # Zeek
 cd /usr/share/nginx/html/repos/zeek
-git clone --recurse-submodules https://github.com/zeek/zeek
+git clone --recurse-submodules https://github.com/zeek/zeek zeek
+chown -R dmss:root zeek
 
 # Suricata
 cd /usr/share/nginx/html/repos/suricata
