@@ -230,7 +230,7 @@ cp /etc/yum.repos.d/localrepo.repo /usr/share/nginx/html/repos/
 Let's now create a bash script to install all of the dependencies we will need for our sensor.
 
 ```
-vim /usr/share/nginx/html/repos/sensor-install.sh
+vim /usr/share/nginx/html/repos/install.sh
 ```
 
 Copy and paste the below into your install.sh file:
