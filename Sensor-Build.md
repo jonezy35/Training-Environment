@@ -1,6 +1,6 @@
 # Building our DMSS kit sensor
 
-### You must first follow the Linux-Setup SOP.
+### You must first follow the Linux-Setup SOP
 
 `sudo su`
 
