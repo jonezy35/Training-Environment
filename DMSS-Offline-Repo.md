@@ -221,6 +221,48 @@ localrepo-extras                                                                
 
 ### ***Add portion on setting up second linux server and copying over the repo information***
 
+Copy the localrepo.repo file to our nginx share so we can access it with other VM's
+
+```
+cp /etc/yum.repos.d/localrepo.repo /usr/share/nginx/html/repos/
+```
+
+Let's now create a bash script to install all of the dependencies we will need for our sensor.
+
+```
+vim /usr/share/nginx/html/repos/sensor-install.sh
+```
+
+Copy and paste the below into your sensor-install.sh file:
+
+```
+#!/bin/bash
+
+#Update packages
+sudo dnf update -y
+
+#Install needed dependencies
+sudo dnf install tar -y
+sudo dnf install htop -y
+sudo dnf install git -y
+sudo dnf install vim -y
+sudo dnf install wget -y
+sudo dnf install util-linux-user -y
+sudo dnf install net-tools -y
+sudo dnf install unzip -y
+
+#Install needed zeek dependencies
+sudo dnf install cmake make gcc gcc-c++ flex bison libpcap-devel openssl-devel python3 python3-devel swig zlib-devel -y
+
+#Install needed suricata dependencies
+sudo dnf install libpcre3 libpcre3-dbg libpcre3-dev build-essential libpcap-dev  -y \
+                libnet1-dev libyaml-0-2 libyaml-dev pkg-config zlib1g zlib1g-dev -y \
+                libcap-ng-dev libcap-ng0 make libmagic-dev -y        \
+                libnss3-dev libgeoip-dev liblua5.1-dev libhiredis-dev libevent-dev -y \
+                python-yaml rustc cargo -y
+
+echo "All dependencies are now installed"
+```
 ### Setting up other VM's to use the offline repository
 
 We need to manually set our IP address. Using nmtui, you can edit your IP address via GUI. 
