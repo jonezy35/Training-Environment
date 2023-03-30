@@ -233,7 +233,7 @@ Let's now create a bash script to install all of the dependencies we will need f
 vim /usr/share/nginx/html/repos/sensor-install.sh
 ```
 
-Copy and paste the below into your sensor-install.sh file:
+Copy and paste the below into your install.sh file:
 
 ```
 #!/bin/bash
@@ -267,6 +267,8 @@ echo "All dependencies are now installed"
 
 We need to manually set our IP address. Using nmtui, you can edit your IP address via GUI. 
 
+`sudo su`
+
 `nmtui`
 
 ![image](https://github.com/jonezy35/Training-Environment/blob/main/images/Screenshot%202023-03-19%20at%201.09.23%20PM.png?raw=true)
@@ -299,6 +301,37 @@ Test your connection to the DNS server
 ping repo.dmss.lan
 ```
 
+We now need to configure our VM to use our offline repository.
+
+```
+mv /etc/yum.repos.d/*.repo /tmp/
+```
+
+```
+cd /etc/yum.repos.d/
+```
+
+```
+curl -L -O http://repo.dmss.lan/localrepo.repo
+```
+
+```
+dnf clean all
+
+dnf repolist
+```
+
+You should now see something similar to the below
+
+```
+repo id                                                                         repo name
+localrepo-appstream                                                             AlmaLinux AppStream
+localrepo-base                                                                  AlmaLinux Base
+localrepo-crb                                                                   AlmaLinux CodeReadBuilder
+localrepo-epel                                                                  AlmaLinux EPEL
+localrepo-extras                                                                AlmaLinux Extras
+```
+
 You can now test your offline repositories by installing a package
 
 ```
@@ -308,10 +341,16 @@ dnf install vim -y
 You can now install the other basic dependencies needed
 
 ```
-sudo dnf install tar -y
-sudo dnf install htop -y
-sudo dnf install git -y
-sudo dnf install vim -y 
-sudo dnf install wget -y
+cd /home/dmss
+
+curl -L -O http://repo.dmss.lan/install.sh
+```
+
+Let's now execute our install script.
+
+```
+chmod 777 install.sh
+
+./install.sh
 ```
 
