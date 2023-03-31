@@ -79,5 +79,14 @@ make install-full
 
 ### Installing Filebeat
 
+```
+mkdir filebeat
+cd filebeat
+curl -L -O http://repo.dmss.lan/elastic/filebeat-7.17.9-x86_64rpm
 
+rpm -vi filebeat-7.17.9-x86_64 
+```
 
+Filebeat is now installed.
+
+### Configuring the Sensor
