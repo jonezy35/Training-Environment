@@ -266,13 +266,17 @@ sudo dnf install swig -y
 sudo dnf install zlib-devel -y
 
 #Install needed suricata dependencies
-#sudo dnf install libpcre3 libpcre3-dbg libpcre3-dev build-essential libpcap-dev  -y \
-#                libnet1-dev libyaml-0-2 libyaml-dev pkg-config zlib1g zlib1g-dev -y \
-#                libcap-ng-dev libcap-ng0 make libmagic-dev -y        \
-#                libnss3-dev libgeoip-dev liblua5.1-dev libhiredis-dev libevent-dev -y \
-#                python-yaml rustc cargo -y
-#
-echo "All dependencies are now installed"
+sudo dnf install pcre-devel -y
+sudo dnf install libyaml-devel -y
+sudo dnf install jansson-devel -y
+sudo dnf install lua-devel -y
+sudo dnf install file-devel -y
+sudo dnf install nspr-devel -y
+sudo dnf install nss-devel -y
+sudo dnf install libcap-ng-devel -y
+sudo dnf install libmaxminddb-devel -y
+sudo dnf install lz4-devel -y
+sudo dnf install rustc cargo -y
 
 echo "All dependencies are now installed"
 ```
