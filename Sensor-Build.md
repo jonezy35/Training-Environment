@@ -2,7 +2,14 @@
 
 ### You must first follow the Linux-Setup SOP
 
+
+Change to root to complete this setup
+
 `sudo su`
+
+### Installing Dependencies
+
+`add section on downloading dependencies script from repo`
 
 ### Building Zeek
 
@@ -30,9 +37,26 @@ We now need to build zeek from source. You can run `./configure` and it will wor
 
 ### Building Suricata
 
-### Installing Elasticsearch
+First we need to pull the suricata source code from our repository.
 
-### Installing Kibana
+```
+wget http://repo.dmss.lan/suricata/suricata-6.0.10.tar.gz
+
+tar xzvf suricata-6.0.10.tar.gz
+
+cd suricata-6.0.10
+```
+
+Just like with zeek above, we must create the make file and then install Suricata.
+```
+./configure --prefix=/opt/suricata --enable-lua --enable-geoip --localstatedir=/var --sysconfdir=/etc --disable-gccmarch-native --enable-profiling --enable-http2-decompression --enable-python --enable-af-packet
+
+make
+
+make install
+```
+
+### Installing Filebeat
 
 
 
