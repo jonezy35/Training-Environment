@@ -277,6 +277,7 @@ sudo dnf install libcap-ng-devel -y
 sudo dnf install libmaxminddb-devel -y
 sudo dnf install lz4-devel -y
 sudo dnf install rustc cargo -y
+sudo dnf install python3-pyyaml -y
 
 echo "All dependencies are now installed"
 ```
