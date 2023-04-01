@@ -352,7 +352,7 @@ cd /home/dmss/
 mkdir filebeat
 cd filebeat
 curl -L -O http://repo.dmss.lan/elastic/filebeat-7.17.9-x86_64.rpm
-rpm -vi filebeat-7.17.9-x86_64 
+sudo rpm -vi filebeat-7.17.9-x86_64.rpm
 
 echo "All dependencies are now installed"
 echo " "
