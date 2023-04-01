@@ -26,7 +26,7 @@ wget https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/0
 
 # Create nginx config file so windows machines can connect.
 
-filename="/etc/nvinx/conf.d/repos.conf"
+filename="/etc/nginx/conf.d/repos.conf"
 
 sudo cat > "$filename" << EOF
 server {
