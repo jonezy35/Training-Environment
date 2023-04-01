@@ -1,7 +1,6 @@
-#!/bin/bash
+#######This script should be run with sudo and will automatically create the DMSS offline repository
 
-# Switch to root
-#sudo su - commented out as this whole script should be run with sudo permissions
+#!/bin/bash
 
 # Import RPM GPG key
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
@@ -60,22 +59,3 @@ curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.
 curl -L -O https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.17.9-windows-x86_64.zip
 curl -L -O https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.17.9-windows-x86_64.msi
 curl -L -O https://artifacts.elastic.co/downloads/logstash/logstash-7.17.9-x86_64.rpm
-
-# Download Windows Active Directory Dependencies
-mkdir /usr/share/nginx/html/repos/windows
-cd /usr/share/nginx/html/repos/windows
-
-echo "DISM /online /Set-Edition:ServerStandard /ProductKey:77KDY-N2CQ8-JVWH3-8GXTV-462HP /AcceptEula" > server_upgrade.txt
-
-curl -L -O https://download.microsoft.com/download/2/5/8/258D30CF-CA4C-433A-A618-FB7E6BCC4EEE/ExchangeServer2016-x64-cu12.iso
-
-curl -L https://go.microsoft.com/fwlink/?LinkID=2099383 --output net-installer.exe
-curl -L -O https://download.microsoft.com/download/2/C/4/2C47A5C1-A1F3-4843-B9FE-84C0032C61EC/UcmaRuntimeSetup.exe
-curl -L -O https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x64.exe
-wget https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/0ac7e1bd-ebbe-4895-8694-1952a345a987/MicrosoftEdgeEnterpriseX64.msi
-
-echo "We are now finished downloading all of the required repositories/ dependencies. For security reasons, you should now remove the wireless NIC from the laptop to airgap our system from the internet."
-
-echo "You can now upload this VM to the Users VLAN on the attack lab server and follow the Users-Vlan-Offline-Repo SOP."
-
-echo "For the DMSS offline repo, upload this VM to the DMSS server and follow the DMSS-Offline-Repo SOP."
