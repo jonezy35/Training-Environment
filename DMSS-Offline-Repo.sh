@@ -62,9 +62,232 @@ curl -L -O https://artifacts.elastic.co/downloads/logstash/logstash-7.17.9-x86_6
 
 # Set hostname
 
-hostnamectl set-hostname repo.dmss.lan
+sudo hostnamectl set-hostname repo.dmss.lan
 
 # Start the DNS server
 
-systemctl enable --now named
+sudo systemctl enable --now named
+
+sudo cp /etc/named.conf /etc/named.conf.old
+
+# Create custom named.conf 
+
+filename="/etc/named.conf"
+
+sudo cat > "$filename" << EOF
+acl internal {
+	10.10.10.0/24;
+        localhost;
+        localnets;
+};
+
+options {
+        listen-on port 53 { 10.10.10.50; };
+        listen-on-v6 port 53 { ::1; };
+        directory       "/var/named";
+        dump-file       "/var/named/data/cache_dump.db";
+        statistics-file "/var/named/data/named_stats.txt";
+        memstatistics-file "/var/named/data/named_mem_stats.txt";
+        secroots-file   "/var/named/data/named.secroots";
+        recursing-file  "/var/named/data/named.recursing";
+        allow-query     { internal; };
+
+        recursion no;
+
+        dnssec-validation yes;
+
+        managed-keys-directory "/var/named/dynamic";
+        geoip-directory "/usr/share/GeoIP";
+
+        pid-file "/run/named/named.pid";
+        session-keyfile "/run/named/session.key";
+
+        include "/etc/crypto-policies/back-ends/bind.config";
+};
+
+logging {
+        channel default_debug {
+                file "data/named.run";
+                severity dynamic;
+        };
+};
+
+zone "dmss.lan" IN {
+    type master;
+    file "/var/named/dmss.lan.zone";
+};
+
+include "/etc/named.rfc1912.zones";
+include "/etc/named.root.key";
+EOF
+
+echo "New named.conf created"
+# Create our dns zone file
+
+filename1="/var/named/dmss.lan.zone"
+
+sudo cat > "$filename1" << EOF
+$TTL 2d
+$ORIGIN dmss.lan.
+
+@           IN      SOA     ns.dmss.lan admin.dmss.lan (
+                                20230218		; serial number
+		                        3600			; refresh period
+		                        600			    ; retry period
+		                        604800			; expire time
+		                        1800 			; negative TTL
+                                )
+@           IN      NS      ns.dmss.lan.
+
+ns          IN      A       10.10.10.50
+
+; Internal Boxes
+win1        IN      A       10.10.10.10
+win2        IN      A       10.10.10.11
+alma        IN      A       10.10.10.12
+
+; Internal Services
+repo        IN      CNAME   ns
+es1         IN      A       10.10.10.100
+es2         IN      A       10.10.10.101
+es3         IN      A       10.10.10.102
+kb          IN      A       10.10.10.103
+sensor      IN      A       10.10.10.104
+EOF
+
+echo "dmss zone file created"
+# Fix permissions for our DNS files
+sudo chown root:named /etc/named.conf
+sudo chown -R named:named /var/named
+sudo chmod 644 /etc/named.conf
+sudo chmod 644 /var/named/dmss.lan.zone
+
+# Add required ports for our DNS server
+sudo firewall-cmd --add-port 53/udp --permanent
+sudo firewall-cmd --reload
+
+# Restart our DNS server so the changes can take effect
+
+sudo systemctl restart named
+
+# Setup NGINX web server
+
+filename2="/etc/nginx/conf.d/repos.conf"
+
+sudo cat > "$filename2" << EOF
+server {
+        listen   80;
+        server_name  repo.dmss.lan;
+        root   /usr/share/nginx/html/repos;
+	index index.html; 
+	location / {
+                autoindex on;
+        }
+}
+EOF
+
+echo "Nginx server configured"
+
+# Add firewall rules for nginx server
+
+sudo firewall-cmd --add-port 80/tcp --permanent
+sudo firewall-cmd --reload
+
+#Restart nginx so teh changes can take effect
+
+sudo systemctl restart nginx
+
+# Create offline repo config to copy over to our other workstations
+
+sudo mv /etc/yum.repos.d/*.repo /tmp/
+
+filename3="/etc/yum.repos.d/localrepo.repo"
+sudo cat > "$filename3" << EOF
+[localrepo-base]
+name=AlmaLinux Base
+baseurl=http://repo.dmss.lan/baseos/
+gpgcheck=0
+enabled=1
+
+[localrepo-appstream]
+name=AlmaLinux AppStream
+baseurl=http://repo.dmss.lan/appstream/
+gpgcheck=0
+enabled=1
+
+[localrepo-crb]
+name=AlmaLinux CodeReadBuilder
+baseurl=http://repo.dmss.lan/crb/
+gpgcheck=0
+enabled=1
+
+[localrepo-epel]
+name=AlmaLinux EPEL
+baseurl=http://repo.dmss.lan/epel/
+gpgcheck=0
+enabled=1
+
+[localrepo-extras]
+name=AlmaLinux Extras
+baseurl=http://repo.dmss.lan/extras/
+gpgcheck=0
+enabled=1
+EOF
+
+sudo dnf clean all
+
+echo "localrepo's configured"
+
+# Create Sensor Install bash script so the sensor VM can pull it down instead of having to recreate it.
+
+filename4="/usr/share/nginx/html/repos/sensor-install.sh"
+
+sudo cat > "$filename4" << EOF
+#!/bin/bash
+
+#Update packages
+sudo dnf update -y
+
+#Install needed dependencies
+sudo dnf install tar -y
+sudo dnf install htop -y
+sudo dnf install git -y
+sudo dnf install vim -y
+sudo dnf install wget -y
+sudo dnf install util-linux-user -y
+sudo dnf install net-tools -y
+sudo dnf install unzip -y
+
+#Install needed zeek dependencies
+sudo dnf install cmake -y
+sudo dnf install make -y
+sudo dnf install gcc -y 
+sudo dnf install gcc-c++ -y 
+sudo dnf install flex -y 
+sudo dnf install bison -y 
+sudo dnf install libpcap-devel -y
+sudo dnf install openssl-devel -y
+sudo dnf install python3 -y
+sudo dnf install python3-devel -y
+sudo dnf install swig -y 
+sudo dnf install zlib-devel -y
+
+#Install needed suricata dependencies
+sudo dnf install pcre-devel -y
+sudo dnf install libyaml-devel -y
+sudo dnf install jansson-devel -y
+sudo dnf install lua-devel -y
+sudo dnf install file-devel -y
+sudo dnf install nspr-devel -y
+sudo dnf install nss-devel -y
+sudo dnf install libcap-ng-devel -y
+sudo dnf install libmaxminddb-devel -y
+sudo dnf install lz4-devel -y
+sudo dnf install rustc cargo -y
+sudo dnf install python3-pyyaml -y
+
+echo "All dependencies are now installed"
+EOF
+
+echo "Sensor install bash script has been created"
 
