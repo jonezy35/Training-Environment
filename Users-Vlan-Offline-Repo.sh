@@ -53,10 +53,10 @@ server {
 }
 EOF
 
-firewall-cmd --add-port 80/tcp --permanent
-firewall-cmd --reload
+sudo firewall-cmd --add-port 80/tcp --permanent
+sudo firewall-cmd --reload
 
-systemctl restart nginx
+sudo systemctl restart nginx
 
 echo "nginx configured"
 echo "firewall rules added"
