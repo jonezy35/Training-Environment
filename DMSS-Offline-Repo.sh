@@ -244,6 +244,8 @@ EOF
 
 sudo dnf clean all
 
+sudo cp /etc/yum.repos.d/localrepo.repo /usr/share/nginx/html/repos/
+
 echo "localrepo's configured"
 
 
@@ -271,6 +273,13 @@ done
 
 echo " "
 echo "Starting Script..."
+
+#Configure offline repo
+sudo mv /etc/yum.repos.d/*.repo /tmp/
+
+sudo curl -L -O /etc/yum.repos.d/localrepo.repo http://repo.dmss.lan/localrepo.repo
+
+sudo dnf clean all
 
 #Update packages
 sudo dnf update -y
