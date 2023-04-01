@@ -10,12 +10,14 @@ sudo dnf config-manager --set-enabled crb
 sudo dnf install epel-release -y
 sudo dnf clean all
 
-# Install nginx
+# Install dependencies
 sudo dnf install tar -y
 sudo dnf install htop -y
 sudo dnf install git -y
 sudo dnf install vim -y
 sudo dnf install wget -y
+
+# Install nginx to serve our files
 dnf install nginx -y
 systemctl enable nginx --now
 
