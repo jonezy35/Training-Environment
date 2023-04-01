@@ -122,6 +122,8 @@ include "/etc/named.root.key";
 EOF
 
 echo "New named.conf created"
+
+
 # Create our dns zone file
 
 filename1="/var/named/dmss.lan.zone"
@@ -156,6 +158,8 @@ sensor      IN      A       10.10.10.104
 EOF
 
 echo "dmss zone file created"
+
+
 # Fix permissions for our DNS files
 sudo chown root:named /etc/named.conf
 sudo chown -R named:named /var/named
@@ -167,8 +171,9 @@ sudo firewall-cmd --add-port 53/udp --permanent
 sudo firewall-cmd --reload
 
 # Restart our DNS server so the changes can take effect
-
 sudo systemctl restart named
+
+
 
 # Setup NGINX web server
 
@@ -188,17 +193,20 @@ EOF
 
 echo "Nginx server configured"
 
-# Add firewall rules for nginx server
 
+
+# Add firewall rules for nginx server
 sudo firewall-cmd --add-port 80/tcp --permanent
 sudo firewall-cmd --reload
 
-#Restart nginx so teh changes can take effect
 
+
+#Restart nginx so teh changes can take effect
 sudo systemctl restart nginx
 
-# Create offline repo config to copy over to our other workstations
 
+
+# Create offline repo config to copy over to our other workstations
 sudo mv /etc/yum.repos.d/*.repo /tmp/
 
 filename3="/etc/yum.repos.d/localrepo.repo"
@@ -237,6 +245,8 @@ EOF
 sudo dnf clean all
 
 echo "localrepo's configured"
+
+
 
 # Create Sensor Install bash script so the sensor VM can pull it down instead of having to recreate it.
 
@@ -290,4 +300,7 @@ echo "All dependencies are now installed"
 EOF
 
 echo "Sensor install bash script has been created"
+echo " "
+echo " "
+echo "The DMSS offline repository has been configured."
 
