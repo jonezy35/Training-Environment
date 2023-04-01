@@ -59,3 +59,12 @@ curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.
 curl -L -O https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.17.9-windows-x86_64.zip
 curl -L -O https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-7.17.9-windows-x86_64.msi
 curl -L -O https://artifacts.elastic.co/downloads/logstash/logstash-7.17.9-x86_64.rpm
+
+# Set hostname
+
+hostnamectl set-hostname repo.dmss.lan
+
+# Start the DNS server
+
+systemctl enable --now named
+
