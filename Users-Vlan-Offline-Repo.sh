@@ -20,7 +20,7 @@ dnf install nginx -y
 systemctl enable nginx --now
 
 # Download Windows Active Directory Dependencies
-mkdir /usr/share/nginx/html/repos/windows
+sudo mkdir -p /usr/share/nginx/html/repos/windows
 cd /usr/share/nginx/html/repos/windows
 
 echo "DISM /online /Set-Edition:ServerStandard /ProductKey:77KDY-N2CQ8-JVWH3-8GXTV-462HP /AcceptEula" > server_upgrade.txt
