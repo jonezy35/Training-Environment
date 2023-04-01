@@ -255,6 +255,23 @@ filename4="/usr/share/nginx/html/repos/sensor-install.sh"
 sudo cat > "$filename4" << EOF
 #!/bin/bash
 
+echo " "
+echo -e "This script \033[4mMUST\033[0m be run as root"
+echo " "
+echo "This script may take a few hours to run."
+echo " "
+echo "This script will automatically start in 30 seconds..."
+
+countdown=30
+while [ $countdown -gt 0 ]; do
+  printf "\rCountdown: %2d seconds remaining" $countdown
+  sleep 1
+  countdown=$((countdown - 1))
+done
+
+echo " "
+echo "Starting Script..."
+
 #Update packages
 sudo dnf update -y
 
@@ -296,7 +313,39 @@ sudo dnf install lz4-devel -y
 sudo dnf install rustc cargo -y
 sudo dnf install python3-pyyaml -y
 
+# Pull down zeek
+wget http://repo.dmss.lan/zeek/zeek.tar.gz
+tar xzvf zeek.tar.gz
+cd zeek
+
+# Install Zeek
+
+./configure --prefix=/opt/zeek --localstatedir=/var/log/zeek --conf-files-dir=/etc/zeek --disable-spicy
+make
+make install
+
+# Pull down Suricata
+
+wget http://repo.dmss.lan/suricata/suricata-6.0.10.tar.gz
+tar xzvf suricata-6.0.10.tar.gz
+cd suricata-6.0.10
+
+# Install Suricata
+
+./configure --prefix=/opt/suricata --enable-lua --enable-geoip --localstatedir=/var --sysconfdir=/etc --disable-gccmarch-native --enable-profiling --enable-http2-decompression --enable-python --enable-af-packet
+make
+make install-full
+
+# Install Filebeat
+
+mkdir filebeat
+cd filebeat
+curl -L -O http://repo.dmss.lan/elastic/filebeat-7.17.9-x86_64rpm
+rpm -vi filebeat-7.17.9-x86_64 
+
 echo "All dependencies are now installed"
+echo " "
+echo "We can now configure the Sensor"
 EOF
 
 echo "Sensor install bash script has been created"
