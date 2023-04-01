@@ -330,10 +330,10 @@ cd zeek
 # Install Zeek
 
 ./configure --prefix=/opt/zeek --localstatedir=/var/log/zeek --conf-files-dir=/etc/zeek --disable-spicy
-make
+make -j\$(nproc)
 make install
 
-cd /home/dmss
+cd /home/dmss/
 
 # Pull down Suricata
 wget http://repo.dmss.lan/suricata/suricata-6.0.10.tar.gz
@@ -343,10 +343,10 @@ cd suricata-6.0.10
 # Install Suricata
 
 ./configure --prefix=/opt/suricata --enable-lua --enable-geoip --localstatedir=/var --sysconfdir=/etc --disable-gccmarch-native --enable-profiling --enable-http2-decompression --enable-python --enable-af-packet
-make
+make -j\$(nproc)
 make install-full
 
-cd /home/dmss
+cd /home/dmss/
 
 # Install Filebeat
 mkdir filebeat
