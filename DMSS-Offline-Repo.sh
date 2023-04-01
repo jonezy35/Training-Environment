@@ -129,8 +129,8 @@ echo "New named.conf created"
 filename1="/var/named/dmss.lan.zone"
 
 sudo cat > "$filename1" << EOF
-$TTL 2d
-$ORIGIN dmss.lan.
+\$TTL 2d
+\$ORIGIN dmss.lan.
 
 @           IN      SOA     ns.dmss.lan admin.dmss.lan (
                                 20230218		; serial number
