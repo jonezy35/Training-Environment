@@ -333,8 +333,9 @@ cd zeek
 make
 make install
 
-# Pull down Suricata
+cd /home/dmss
 
+# Pull down Suricata
 wget http://repo.dmss.lan/suricata/suricata-6.0.10.tar.gz
 tar xzvf suricata-6.0.10.tar.gz
 cd suricata-6.0.10
@@ -345,11 +346,12 @@ cd suricata-6.0.10
 make
 make install-full
 
-# Install Filebeat
+cd /home/dmss
 
+# Install Filebeat
 mkdir filebeat
 cd filebeat
-curl -L -O http://repo.dmss.lan/elastic/filebeat-7.17.9-x86_64rpm
+curl -L -O http://repo.dmss.lan/elastic/filebeat-7.17.9-x86_64.rpm
 rpm -vi filebeat-7.17.9-x86_64 
 
 echo "All dependencies are now installed"
