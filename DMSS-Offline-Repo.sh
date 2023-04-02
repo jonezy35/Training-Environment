@@ -156,10 +156,10 @@ sudo cat > "$filename1" << EOF
 
 @           IN      SOA     ns.dmss.lan admin.dmss.lan (
                                 20230218		; serial number
-		                        3600			; refresh period
-		                        600			    ; retry period
-		                        604800			; expire time
-		                        1800 			; negative TTL
+		                3600			; refresh period
+		                600			; retry period
+		                604800			; expire time
+		                1800 			; negative TTL
                                 )
 @           IN      NS      ns.dmss.lan.
 
