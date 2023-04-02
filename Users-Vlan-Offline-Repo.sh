@@ -2,6 +2,22 @@
 
 #!/bin/bash
 
+echo " "
+echo -e "This script \033[4mMUST\033[0m be run with sudo permissions"
+echo " "
+echo "You need an internet connection to create the offline repository"
+echo " "
+echo "If you're unsure how to get an internet connection, refer to the offline repository SOP for instructions"
+echo " "
+echo "This script will automatically start in 30 seconds..."
+
+countdown=30
+while [ \$countdown -gt 0 ]; do
+  printf "\rCountdown: %2d seconds remaining" \$countdown
+  sleep 1
+  countdown=\$((countdown - 1))
+done
+
 # Import RPM GPG key
 rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
 
