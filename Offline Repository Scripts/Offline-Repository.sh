@@ -11,11 +11,11 @@ while true; do
 
     # Execute a script based on the user input
     if [ "$user_input" == "1" ]; then
-        ./DMSS-Offline-Repo.sh
+        sudo ./DMSS-Offline-Repo.sh
         #echo "Executing DMSS" #For Testing Purposes
         break  # Exit the loop when a valid input is entered
     elif [ "$user_input" == "2" ]; then
-        ./Users-Vlan-Offline-Repo.sh
+        sudo ./Users-Vlan-Offline-Repo.sh
         #echo "Executing Users" For Testing Purposes
         break  # Exit the loop when a valid input is entered
     else
