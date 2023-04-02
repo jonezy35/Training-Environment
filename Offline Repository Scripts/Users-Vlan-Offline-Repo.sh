@@ -12,10 +12,10 @@ echo " "
 echo "This script will automatically start in 30 seconds..."
 
 countdown=30
-while [ \$countdown -gt 0 ]; do
+while [ $countdown -gt 0 ]; do
   printf "\rCountdown: %2d seconds remaining" \$countdown
   sleep 1
-  countdown=\$((countdown - 1))
+  countdown=$((countdown - 1))
 done
 
 # Import RPM GPG key
